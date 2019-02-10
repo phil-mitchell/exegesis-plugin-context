@@ -1,6 +1,6 @@
 {
   "name": "exegesis-plugin-context",
-  "version": "1.0.0-rc",
+  "version": "1.0.0",
   "description": "An exegesis plugin to add a extra values to the request context",
   "main": "src/index.js",
   "engines": {
