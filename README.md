@@ -1,7 +1,7 @@
-# exegesis-plugin-swagger-ui-express
+# exegesis-plugin-context
 
-[![Run Status](https://api.shippable.com/projects/5c3011d2302eb707003b9ffe/badge?branch=master)]()
-[![Coverage Badge](https://api.shippable.com/projects/5c3011d2302eb707003b9ffe/coverageBadge?branch=master)]()
+[![Run Status](https://api.shippable.com/projects/5c60aaf93adda8070010b003/badge?branch=master)]()
+[![Coverage Badge](https://api.shippable.com/projects/5c60aaf93adda8070010b003/coverageBadge?branch=master)]()
 ![](https://img.shields.io/github/issues/phil-mitchell/exegesis-plugin-context.svg)
 ![](https://img.shields.io/github/license/phil-mitchell/exegesis-plugin-context.svg)
 ![](https://img.shields.io/node/v/exegesis-plugin-context.svg)

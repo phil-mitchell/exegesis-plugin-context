@@ -18,6 +18,7 @@ async function createServer() {
                     return( `Context contains ${context.extraContext.myParam}` );
                 },
                 createPets() {
+                    return null;
                 }
             }
         },
