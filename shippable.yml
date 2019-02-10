@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - 8.15.0
+
+env:
+  global:
+    - XUNIT_FILE: shippable/testresults/result.xml
+    - secure: lYm2gQlxwsrf16HEAm3dy0jHH2t8vbq9Oj3xrXKYRFHBM8tNVuRQA8RdabfsRVDV4PX8U/0z4tbDl4wP6YxGk4WXP9FoYknX7S53Q8Uy6iuEV8JSLY46f9WrKPkm6JkRaybxtEVl+i07P9ah4e8RhXv7Rj/GBU9nhAwnljFaxHFeKjBIIk4z/ygvWqFinS8tVpjgZBYg3dMtuIsdDOnlKMRrOvbiwnaGqXDBW+vpIyDZuJHsHe2UmgqyA4fWWusFqQpAeNl9pwdfv67SeSKT+qQZFrJBAtjEqnX/MP92v9tLNNig/MsSBWf5gyRJhDhtXM4Sv7D/sP2wZMnP91bq7w==
+    - secure: mHAAzThCLH+aoENQUe1ddT8bMy6E/WZxIy8JqpMwPdOsy7asM1ZIA3vH3eMxIijHxL/pVFEU6yavrPz0+lR7891wMm5XQ998BMsGh0mkERDk/pEEcGyiTS/izimW7Hkryppo/aCnGpvBSH+OAGa4uVL+cZ7vnrnBSUFejJeNMT6RADyXqXVyZjDtPoLrRmEAw915cJbkIioRktxLIZswWtPCDfhAOGaEk7ysHOLcNd6oPQ5lxAtampIJyGRkSv7S719DpYKjuH/tIEFF8Cmhp7x3JpJLrk6OUJ/nqdc/i7adbf0kTMA3JPOZWwNwU5kZlCgDRbPrYXlT49mGqHyoaw==
+
+build:
+  ci:
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+    - shippable_retry npm install
+    - npm test
+  on_success:
+    - if [ "$BRANCH" == "master" ]; then npm run semantic-release; fi
