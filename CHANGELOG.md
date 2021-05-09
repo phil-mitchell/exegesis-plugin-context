@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/phil-mitchell/exegesis-plugin-context/compare/v1.0.2...v1.0.3) (2021-05-09)
+
+
+### Bug Fixes
+
+* **deps:** Update dependencies ([1f65491](https://github.com/phil-mitchell/exegesis-plugin-context/commit/1f6549199d118a81a11a981cd4f64657bb36577c))
+
 ## [1.0.2](https://github.com/phil-mitchell/exegesis-plugin-context/compare/v1.0.1...v1.0.2) (2020-02-01)
 
 
